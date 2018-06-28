@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "code"
+    "name": "Welcome | Africa Bridge and Research Society Platform"
   },
   "apps": [
     {
