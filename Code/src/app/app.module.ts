@@ -7,15 +7,22 @@ import { ButtonModule } from 'primeng/primeng';
 import { RadioButtonModule } from 'primeng/primeng';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-
+import {Routes, RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { AuthComponent } from './auth/auth.component';
 
+
+const appRoutes: Routes=[
+{path:'home', component: HomeComponent},
+
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +31,8 @@ import { HomeComponent } from './home/home.component';
     AccordionModule,
     PanelModule,
     ButtonModule,
-    RadioButtonModule
+    RadioButtonModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
